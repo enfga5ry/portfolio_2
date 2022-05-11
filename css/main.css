@@ -184,7 +184,7 @@ main .home .container h1 {
   width: 0;
   white-space: nowrap;
   overflow: hidden;
-  font-size: 36px;
+  font-size: 32px;
   position: relative;
   font-weight: 500;
   animation: typing 2s steps(20) both;
@@ -493,6 +493,7 @@ main .contact .container .data {
   align-items: center;
   gap: 30px;
   padding: 15px;
+  width: 100%;
 }
 main .contact .container .data i {
 font-size: 30px;
@@ -501,6 +502,14 @@ main .contact .container .data > p {
 font-size: 18px;
 font-weight: 500;
 color: var(--second-color);
+}
+@media (max-width:650px) {
+  main .contact .container .data {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
 }
 main .contact .container > p {
 color: var(--second-color);
@@ -583,84 +592,7 @@ footer p {
   width: 100%;
   text-align: center;
   font-size: 16px;
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* animation  */
 @keyframes flushing {
@@ -677,6 +609,6 @@ footer p {
     width: 0;
   }
   to {
-    width: 380px;
+    width: 340px;
   }
 }
